@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marcus Vinicius de Aguiar Paixão">
+    <title>PaixãoTech</title>
+    <link rel="shortcut icon" href="assets/img/Favicon.png">
+    <!--  Icon css plugins -->
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <!--  animate css plugins -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--  slick css plugins -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!--  magnific-popup css plugins -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- metis menu css -->
+    <link rel="stylesheet" href="assets/css/metismenu.css">
+    <!--  Bootstrap css plugins -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--  main style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="body-wrapper">    
+    <!-- preloader -->
+    <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="spinner">                
+            </div>
+                <div class="txt-loading">
+                    <span data-text-preloader="P" class="letters-loading">
+                        P
+                    </span>
+                    <span data-text-preloader="A" class="letters-loading">
+                        A
+                    </span>
+                    <span data-text-preloader="I" class="letters-loading">
+                        I
+                    </span>
+                    <span data-text-preloader="X" class="letters-loading">
+                        X
+                    </span>
+                    <span data-text-preloader="A" class="letters-loading">
+                        A
+                    </span>
+                    <span data-text-preloader="O" class="letters-loading">
+                        O
+                    </span>
+                    <span data-text-preloader="T" class="letters-loading">
+                        T
+                    </span>
+                    <span data-text-preloader="E" class="letters-loading">
+                        E
+                    </span>
+                    <span data-text-preloader="C" class="letters-loading">
+                        C
+                    </span>
+                    <span data-text-preloader="H" class="letters-loading">
+                        H
+                    </span>
+                </div>
+            <p class="text-center">Carregando</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <header class="header-1 transparent-menu">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-3 col-sm-5 col-md-4 col-6 pr-lg-5">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/img/logo-branco.png"  alt="PaixãoTech">       
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-9 text-end p-lg-0 d-none d-lg-flex justify-content-between align-items-center">
+                    <div class="menu-wrap">
+                        <div class="main-menu">
+                            <ul>
+                                <li><a href="#">Home</i></a></li>
+                                <li><a href="#">Sobre Nós</a> </li>
+                                <li><a href="#">Serviços</a></li>
+                                <li><a href="#">Projetos</a></li>
+                                <li><a href="#">Preços</a></li>
+                                <li><a href="#">Contato</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-right-element">
+                        <a href="#" class="theme-btn">FAÇA SEU ORÇAMENTO</a>
+                    </div>
+                </div>
+                <div class="d-block d-lg-none col-sm-1 col-md-8 col-6">
+                    <div class="mobile-nav-wrap">
+                        <div id="hamburger"><i class="fal fa-bars"></i></div>
+                        <!-- mobile menu - responsive menu  -->
+                        <div class="mobile-nav">
+                            <button type="button" class="close-nav">
+                                <i class="fal fa-times-circle"></i>
+                            </button>
+                            <nav class="sidebar-nav">
+                                <ul class="metismenu" id="mobile-menu">
+                                    <li><a href="#">Home</i></a></li>
+                                    <li><a href="#">Sobre Nós</a> </li>
+                                    <li><a href="#">Serviços</a></li>
+                                    <li><a href="#">Projetos</a></li>
+                                    <li><a href="#">Preços</a></li>
+                                    <li><a href="#">Contato</a></li>
+                                </ul>
+                            </nav>
+                            <div class="action-bar text-white">
+                                <div class="single-info-element">
+                                    <div class="icon">
+                                        <i class="fal fa-map-marked-alt"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h5>Faça uma visita:</h5>
+                                        <span>Rua Floresto Bandecchi, 479</span>
+                                    </div>
+                                </div>
+                                <div class="single-info-element">
+                                    <div class="icon">
+                                        <i class="fal fa-clock"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h5>Horário de Atendimento:</h5>
+                                        <span>Seg-Sex 8h00 - 20h00</span>
+                                    </div>
+                                </div>
+                                <div class="single-info-element">
+                                    <div class="icon">
+                                        <i class="fal fa-envelope"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h5>Mande um E-mail:</h5>
+                                        <span>marcuspaixao0@gmail.com</span>
+                                    </div>
+                                </div>
+                                <div class="call-us">
+                                    <div class="icon text-white">
+                                        <i class="fal fa-phone-volume"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h5>Telefone:</h5>
+                                        <span>(11) 98199-6294</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="theme-btn mt-4">Agende sua consulta</a>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-wrapper hero-2 text-center">
+        <div class="hero-slider-active">
+            <div class="single-slide">
+                <div class="slide-bg bg-cover wow zoomIn" style="background-image: url('assets/img/slide1.jpg');"></div>
+                <div class="layer1"></div>
+                <div class="layer2"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hero-contents">
+                                <h2 class="animated" data-animation-in="fadeInDown">Solução de software especializada em </h6>
+                                <h1 class="fs-lg animated" data-animation-in="fadeInRight" data-delay-in="0.3"style="text-transform: uppercase;">Websites</h1>
+                                <p class="pe-lg-5 mb-4 animated" data-animation-in="fadeInRight" data-delay-in="0.6">"Transformando a complexidade em soluções simples" <br>
+                                    Mais de 10 anos de experiência no mercado</p>
+                                <a href="#" data-animation-in="fadeInRight" data-delay-in="0.9" class="theme-btn me-sm-4 mt-4 animated">Faça sua Consulta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-slide">
+                <div class="slide-bg bg-cover wow zoomIn" style="background-image: url('assets/img/slide2.jpg');"></div>
+                <div class="layer1"></div>
+                <div class="layer2"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hero-contents">
+                                <h2 class="animated" data-animation-in="fadeInDown">Solução de software especializada em </h6>
+                                <h1 class="fs-lg animated" data-animation-in="fadeInRight" data-delay-in="0.3" style="text-transform: uppercase;">E-Commerce</h1>
+                                <p class="pe-lg-5 mb-4 animated" data-animation-in="fadeInRight" data-delay-in="0.6">"Transformando a complexidade em soluções simples" <br>
+                                    Mais de 10 anos de experiência no mercado</p>
+                                <a href="#" data-animation-in="fadeInRight" data-delay-in="0.9" class="theme-btn me-sm-4 mt-4 animated">Faça sua Consulta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-slide">
+                <div class="slide-bg bg-cover wow zoomIn" style="background-image: url('assets/img/slide3.jpg');"></div>
+                <div class="layer1"></div>
+                <div class="layer2"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hero-contents">
+                                <h2 class="animated" data-animation-in="fadeInDown">Solução de software especializada em </h6>
+                                <h1 class="fs-lg animated" data-animation-in="fadeInRight" data-delay-in="0.3"style="text-transform: uppercase;">Aplicativos</h1>
+                                <p class="pe-lg-5 mb-4 animated" data-animation-in="fadeInRight" data-delay-in="0.6">"Transformando a complexidade em soluções simples" <br>
+                                    Mais de 10 anos de experiência no mercado</p>
+                                <a href="#" data-animation-in="fadeInRight" data-delay-in="0.9" class="theme-btn me-sm-4 mt-4 animated">Faça sua Consulta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-featured-box-wrapper">
+        <div class="container">
+            <div class="services-container-wrapper wow fadeInUp section-padding" data-wow-delay=".3s">
+                <div class="row text-center">
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="single-service-info-item">
+                            <div class="icon">
+                                <img src="assets/img/icons/solution.svg" alt="">
+                            </div>
+                            <h4><a href="#">Soluções para TI</a></h4>
+                            <p style="text-align: center;">Implementação e atualização de softwares são algumas das soluções oferecidas</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="single-service-info-item">
+                            <div class="icon">
+                                <img src="assets/img/icons/coding.svg" alt="">
+                            </div>
+                            <h4><a href="#">Desenvolvimento</a></h4>
+                            <p style="text-align: center;">Oferecemos serviços de desenvolvimento de software utilizando as tecnologias mais modernas do mercado</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="single-service-info-item">
+                            <div class="icon">
+                                <img src="assets/img/icons/ux-design.svg" alt="">
+                            </div>
+                            <h4><a href="#">Web Design</a></h4>
+                            <p style="text-align: center;">Desde a criação de layouts modernos até o desenvolvimento de funcionalidades e otimização.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="single-service-info-item">
+                            <div class="icon">
+                                <img src="assets/img/icons/database.svg" alt="">
+                            </div>
+                            <h4><a href="#">Servidor</a></h4>
+                            <p style="text-align: center;">Oferecemos serviços de hospedagem de aplicações WEB e Console com preços acessíveis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-wrapper section-padding">
+        <div class="container">
+            <div class="row align-center">
+                <div class="col-lg-6 col-12">
+                    <div class="about-img-funfact-content me-xl-3">
+                        <img src="assets/img/about-img.jpg" class="img-round" alt="">
+
+                        <div class="fun-fact-bar wow fadeInDown">
+                            <div class="year-img">
+                                <h3>+ 10</h3>
+                                <img src="assets/img/icons/award.png" alt="">
+                            </div>
+                            <p>Anos de Experiência</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 mt-5 mt-lg-0 ps-xl-5">
+                    <div class="section-title">
+                        <h2>Sua Parceira para <br>
+                            Inovação de Software</h2>
+                        <p>A PaixãoTech é uma empresa de TI que oferece serviços de software personalizados
+                             para ajudar empresas a se manterem competitivas no mercado. Sua equipe altamente
+                              qualificada trabalha para entender as necessidades únicas de cada cliente, desenvolvendo
+                               soluções sob medida para atender a essas necessidades.</p>
+                    </div>
+                    <ul class="checked-list mt-1">
+                        <li>Oferece soluções de software personalizadas para atender às necessidades específicas de cada cliente</li>
+                        <li>Manutenção de todas as versões de software utilizadas pela empresa</li>
+                        <li>Equipe altamente qualificada e experiente</li>
+                        <li>Implanta tecnologia de alta velocidade USB</li>
+                    </ul>
+                    <a href="#" class="theme-btn mt-30">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="best-services-wrapper section-padding bg-cover" style="background-image: url('assets/img/services-bg.jpg')">
+        <div class="container">
+            <div class="col-12 col-xl-6 offset-xl-3 col-md-8 offset-md-2 text-center">
+                <div class="section-title">
+                    <h2>Oferecemos uma grande variedade de Soluções para a sua empresa</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-6 col-12">
+                    <div class="single-service-top-icon wow fadeInUp">
+                        <div class="icon">
+                            <img src="assets/img/icons/desktop.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h4><a href="#">Desenvolvimento Web</a></h4>
+                            <p>Nossa equipe de desenvolvimento web é composta por profissionais experientes em tecnologias de ponta. 
+                                Trabalhamos com você para transformar suas ideias em soluções digitais eficazes e personalizadas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-12">
+                    <div class="single-service-top-icon wow fadeInUp" data-wow-delay=".2s">
+                        <div class="icon">
+                            <img src="assets/img/icons/mobile.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h4><a href="#">Desenvolvimento de Aplicativos</a></h4>
+                            <p>Com uma equipe de desenvolvedores de aplicativos experientes, podemos transformar suas ideias em aplicativos funcionais, escaláveis e de alta qualidade.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-12">
+                    <div class="single-service-top-icon wow fadeInUp" data-wow-delay=".4s">
+                        <div class="icon">
+                            <img src="assets/img/icons/ux.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h4><a href="#">Design de UI/UX</a></h4>
+                            <p>Construa o produto que você precisa no prazo com uma equipe experiente que utiliza um processo de design claro e efetivo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-12">
+                    <div class="single-service-top-icon wow fadeInUp">
+                        <div class="icon">
+                            <img src="assets/img/icons/qa.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h4><a href="#">QA e Testes</a></h4>
+                            <p>Recorra aos nossos especialistas para realizar testes abrangentes em várias etapas e auditoria do seu software.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-12">
+                    <div class="single-service-top-icon wow fadeInUp" data-wow-delay=".2s">
+                        <div class="icon">
+                            <img src="assets/img/icons/stock.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h4><a href="#">Consultoria de TI</a></h4>
+                            <p>Nossa equipe de consultores de TI está pronta para ajudá-lo a otimizar seus processos de negócios, 
+                                implementar soluções de tecnologia e alcançar seus objetivos de negócios de forma mais eficiente.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-12">
+                    <div class="single-service-top-icon wow fadeInUp" data-wow-delay=".4s">
+                        <div class="icon">
+                            <img src="assets/img/icons/web.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h4><a href="#">Equipe Dedicada</a></h4>
+                            <p>Ao longo da última década, nossos clientes alcançaram o sucesso aproveitando o processo da Intellect Soft na construção e motivação de equipes dedicadas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choice-us section-padding bg-cover" style="background-image: url('assets/img/why-bg.jpg')">
+        <div class="container">
+            <div class="col-12 col-xl-6 offset-xl-3 col-md-8 offset-md-2 text-center">
+                <div class="section-title text-white">
+                    <span>Porque escolher nossa empresa?</span>
+                    <h2>Nossa missão é fazer a sua empresa melhor!</h2>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-xl-3 col-md-6 col-12">
+                    <div class="single-icon-box wow fadeInUp">
+                        <div class="icon">
+                            <img src="assets/img/icons/system.svg" alt="">
+                        </div>
+                        <div class="content">
+                            <h4>Sistema Seguro</h4>
+                            <p>Sensores inteligentes de alta segurança que identificam de forma confiável tentativas de corte ou escalada com precisão.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12">
+                    <div class="single-icon-box wow fadeInUp">
+                        <div class="icon">
+                            <img src="assets/img/icons/team.svg" alt="">
+                        </div>
+                        <div class="content">
+                            <h4>Equipe Especializada</h4>
+                            <p>Nossa equipe especializada é composta por profissionais altamente capacitados e experientes, prontos para fornecer soluções personalizadas para atender às suas necessidades.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12">
+                    <div class="single-icon-box wow fadeInUp">
+                        <div class="icon">
+                            <img src="assets/img/icons/desk.svg" alt="">
+                        </div>
+                        <div class="content">
+                            <h4>Suporte 24/7</h4>
+                            <p>Nosso suporte técnico está disponível 24 horas por dia, 7 dias por semana, para ajudar a resolver seus problemas e garantir que suas necessidades sejam atendidas o mais rápido possível.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12">
+                    <div class="single-icon-box wow fadeInUp">
+                        <div class="icon">
+                            <img src="assets/img/icons/expert.svg" alt="">
+                        </div>
+                        <div class="content">
+                            <h4>Especialista Certificado</h4>
+                            <p>Nossos especialistas são altamente qualificados e possuem as certificações necessárias para fornecer soluções personalizadas e de alta qualidade para atender às suas necessidades.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-grid-wrapper pt-0 section-padding">
+        <div class="container">
+            <div class="row align-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="section-title">
+                        <span>Confira nossos Projetos</span>
+                        <h3>Crie ou Melhore seus Projetos, junto conosco</h3>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-lg-end text-center">
+                    <div class="case-cat-filter">
+                        <button data-filter="*" class="active">Todos</button>
+                        <button data-filter=".web" class="">Web Design</button>
+                        <button data-filter=".technology">Tecnologia</button>
+                        <button data-filter=".soft">Software</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row grid">
+                <div class="col-xl-4 col-md-6 grid-item web soft">
+                    <div class="single-project-card bg-cover" style="background-image: url('assets/img/project/1.jpg')">
+                        <a href="#" class="plus-link"><i class="fal fa-plus"></i></a>
+                        <div class="content">
+                            <h3>Aplicativos Móveis</h3>
+                            <p>Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 grid-item technology web">
+                    <div class="single-project-card bg-cover" style="background-image: url('assets/img/project/2.jpg')">
+                        <a href="#" class="plus-link"><i class="fal fa-plus"></i></a>
+                        <div class="content">
+                            <h3>Aplicativos Web</h3>
+                            <p>Desenvolvimento</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 grid-item business technology soft">
+                    <div class="single-project-card bg-cover" style="background-image: url('assets/img/project/3.jpg')">
+                        <a href="#" class="plus-link"><i class="fal fa-plus"></i></a>
+                        <div class="content">
+                            <h3>Online Games</h3>
+                            <p>Game</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-wrapper section-padding bg-overlay bg-cover" style="background-image: url('assets/img/cta-bg.jpg')">
+        <div class="container">
+            <div class="col-lg-10 offset-lg-1 col-12 text-center">
+                <div class="cta-contents text-white">
+                    <h1 class="mb-4">Entregando Soluções de TI que Permitem que Você Trabalhe de Maneira Inteligente</h1>
+                    <p>Oferecemos soluções de TI adequadas para o seu negócio específico, tornando fácil para você obter 
+                        serviços de qualidade e trabalhar de maneira mais inteligente.</p>
+                </div>
+                <a href="#" class="theme-btn mt-35">Começe Já</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimnial-carousel-wrapper">
+        <div class="container">
+            <div class="row align-center">
+                <div class="col-xl-5 pe-lg-0">
+                    <div class="section-title">
+                        <span>Depoimentos</span>
+                        <h2>Veja o que nossos clientes tem a dizer</h2>
+                        <p>A Paixão Tech foi projetada para ajudar a garantir que você e seus dados 
+                            estejam protegidos e que seu sistema funcione da melhor maneira possível.</p>
+                    </div>
+                    <a href="#" class="theme-btn">Veja Mais</a>
+                </div>
+                <div class="col-xl-7">
+                    <div class="customer-feedback-carousel-active mt-4 mt-xl-0">
+                        <div class="single-customer-review">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>“Gostaria de expressar a minha gratidão à Paixão Tech pela excelente aplicação web que eles desenvolveram 
+                                para a minha empresa. O processo de desenvolvimento foi muito tranquilo e a equipe da Paixão Tech foi muito 
+                                profissional e prestativa em todas as etapas.”</p>
+                            <div class="client-info-card">
+                                <div class="img-wrapper">
+                                    <div class="client-img bg-cover" style="background-image: url('assets/img/author2.jpg')"></div>
+                                </div>
+                                <div class="client-details">
+                                    <h4>Joseph</h4>
+                                    <span>Gerente Geral, Js Instalações Ltda.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-customer-review">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>“Gostaria de compartilhar minha experiência com o aplicativo móvel desenvolvido 
+                                pela equipe da empresa Paixão Tech. Estou extremamente satisfeito com a qualidade 
+                                do aplicativo e com o atendimento que recebi durante todo o processo de desenvolvimento.”</p>
+                            <div class="client-info-card">
+                                <div class="img-wrapper">
+                                    <div class="client-img bg-cover" style="background-image: url('assets/img/author3.jpg')"></div>
+                                </div>
+                                <div class="client-details">
+                                    <h4>Taylor</h4>
+                                    <span>Fundador & CEO, Tecnosys.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-pricing-plan-wrapper section-padding">
+        <div class="container">
+            <div class="col-lg-8 offset-lg-2 text-center col-12">
+                <div class="section-title">
+                    <span>Veja nossos Planos</span>
+                    <h2>OS MELHORES PREÇOS DO MERCADO</h2>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-xl-4 col-md-6 col-12">
+                    <div class="single-pricing-plan plan-1">
+                        <div class="plan-title">
+                            <h2>Profissional</h2>
+                        </div>
+                        <div class="plan-value">
+                            <span>R$95,50</span>
+                            Mensais
+                        </div>
+                        <div class="plan-buy-btn">
+                            <p>Plano básico para pequenas empresas com assinatura mensal.</p>
+                            <a href="#" class="theme-btn">Compre agora <i class="fal fa-long-arrow-right"></i></a>
+                        </div>
+                        <ul class="plan-service-list">
+                            <li>1 Servidor </li>
+                            <li class="no">Regras de négocio personalizadas</li>
+                            <li>Preço de compra em tempo real</li>
+                            <li>100% Seguro</li>
+                            <li>50 Remessas de Frete</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-12">
+                    <div class="single-pricing-plan active plan-2">
+                        <div class="plan-title">
+                            <h2>Empresarial</h2>
+                        </div>
+                        <div class="plan-value">
+                            <span>R$159,99</span>
+                            Anual divido em 12x
+                        </div>
+                        <div class="plan-buy-btn">
+                            <p>Plano médio para empresas de médio porte com assinatura anual dividida em 12x.</p>
+                            <a href="#" class="theme-btn">Compre Agora <i class="fal fa-long-arrow-right"></i></a>
+                        </div>
+                        <ul class="plan-service-list">
+                            <li>2 Servidores </li>
+                            <li>Regras de négocio personalizadas </li>
+                            <li>Preço de compra em tempo real</li>
+                            <li>100% Seguro</li>
+                            <li>200 Remessas de Frete</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-12">
+                    <div class="single-pricing-plan plan-3">
+                        <div class="plan-title">
+                            <h2>Avançado</h2>
+                        </div>
+                        <div class="plan-value">
+                            <span>R$2.500</span>
+                            Anual
+                        </div>
+                        <div class="plan-buy-btn">
+                            <p>Plano avançado para grandes empresas com assinatual anual</p>
+                            <a href="#" class="theme-btn">Compre Agora <i class="fal fa-long-arrow-right"></i></a>
+                        </div>
+                        <ul class="plan-service-list">
+                            <li>5 Servidores</li>
+                            <li>Regras de négocio personalizadas </li>
+                            <li>Preço de compra em tempo real</li>
+                            <li>100% Seguro</li>
+                            <li>500 Remessas de Frete</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-us-wrapper section-bg section-padding">
+        <div class="container">
+            <div class="row align-center">
+                <div class="col-md-7 col-xl-6">
+                    <div class="section-title">
+                        <h2>Entre em Contato</h2>
+                    </div>
+
+                    <div class="contact-form">                                                        
+                        <form action="mail.php" class="row" id="contact-form">
+                            <div class="col-md-6 col-12">
+                                <div class="single-personal-info">
+                                    <input type="text" id="name" placeholder="Nome" >                                         
+                                </div>
+                            </div>                            
+                            <div class="col-md-6 col-12">
+                                <div class="single-personal-info">
+                                    <input type="email" id="email" placeholder="E-mail" >                                         
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="single-personal-info">
+                                    <input type="text" id="phone" placeholder="Telefone">                                         
+                                </div>
+                            </div>                                      
+                            <div class="col-md-6 col-12">
+                                <div class="single-personal-info">
+                                    <input type="text" id="subject" placeholder="Assunto">                                         
+                                </div>
+                            </div>                                      
+                            <div class="col-md-12 col-12">
+                                <div class="single-personal-info">
+                                    <textarea id="message" placeholder="Escreva sua mensagem"></textarea>                                        
+                                </div>
+                            </div>                                      
+                            <div class="col-md-12 col-12">
+                                <input class="theme-btn" type="submit" value="Enviar">
+                            </div>                                      
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-xl-5  offset-xl-1">
+                    <div class="contact-img-wrapper">
+                        <img src="assets/img/contact-img.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner-wrapper">
+        <div class="container">
+            <div class="cta-banner-box section-padding bg-cover" style="background-image: url('assets/img/cta-banner-bg.jpeg')">
+                <div class="row align-center">
+                    <div class="col-xl-7 text-center text-xl-start offset-xl-1 offset-xl-1">
+                        <div class="section-title mb-0">
+                            <span>Faça sua Cotação</span>
+                            <h2 class="mb-md-0">Precisa de consulta ou Trabalhar no próximo projeto</h2>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 mt-4 mt-xl-0 text-center">
+                        <a href="#" class="theme-btn">Entre em contato</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer-1 footer-wrap">
+        <div class="footer-widgets-wrapper text-white bg-cover" style="background-image: url('assets/img/footer-widgets-bg.png')">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="about-quantech pe-md-5 pe-xl-0">
+                            <a href="index.html">
+                                <img src="assets/img/logo-branco.png" alt="Paixão Tech">
+                            </a>
+                            <p>Um negócio de soluções e tecnologia de TI que se dedica a fornecer soluções
+                                 inovadoras e eficientes para problemas empresariais. Com sua equipe altamente qualificada 
+                                 de profissionais de TI, a Paixão Tech oferece uma ampla gama de serviços.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="single-footer-wid ps-xl-5">
+                            <div class="wid-title">
+                                <h3>Informações</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Serviços</a></li>
+                                <li><a href="#">Sobre Nós</a></li>
+                                <li><a href="#">Soluções de TI</a></li>
+                                <li><a href="#">Nosso Time</a></li>
+                                <li><a href="#">Estudo de Caso</a></li>
+                                <li><a href="#">Entre em Contato</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="single-footer-wid ps-xl-2">
+                            <div class="wid-title">
+                                <h3>Our Services</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Soluções de TI</a></li>
+                                <li><a href="#">Tecnologia</a></li>
+                                <li><a href="#">Site WordPress</a></li>
+                                <li><a href="#">E-Commerce</a></li>
+                                <li><a href="#">Consultoria</a></li>
+                                <li><a href="#">Aplicativos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="single-footer-wid site-info-widget">
+                            <div class="wid-title">
+                                <h3>Entre em Contato</h3>
+                            </div>
+                            <div class="get-in-touch">
+                                <div class="single-contact-info">
+                                    <div class="icon id1">
+                                        <i class="fal fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-info">
+                                        <span>Rua Floresto Bandecchi, 479</span>
+                                    </div>
+                                </div>
+                                <div class="single-contact-info">
+                                    <div class="icon id2">
+                                        <i class="fal fa-phone"></i>
+                                    </div>
+                                    <div class="contact-info">
+                                        <span>(11) 98199-6294</span>
+                                    </div>
+                                </div>
+                                <div class="single-contact-info">
+                                    <div class="icon id3">
+                                        <i class="fal fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-info">
+                                        <span>marcuspaixao0@gmail.com</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="newsletter_widget">
+                                <div class="newsletter_box">
+                                    <form action="#">
+                                        <input type="email" placeholder="Digite seu e-mail" required>
+                                        <button class="submit-btn" type="submit"><i class="fas fa-envelope-open"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container align-items-center">
+                <div class="bottom-content-wrapper">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="copy-rights">
+                                <p>&copy;2023 <strong>Paixão Tech</strong>, Todos os direitos reservados</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-2 mt-md-0 col-12 text-md-end">
+                            <div class="social-links">
+                                <a href="https://www.instagram.com/ops_aguiaar/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://github.com/Vini1404"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/marcus-vinicius-paixao/"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://marcuspaixao.com.br"><i class="fab fa-wordpress"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>   
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/modernizr.min.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imageload.min.js"></script>
+    <script src="assets/js/scrollUp.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/slick-animation.min.js"></script>
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/metismenu.js"></script>
+    <script src="assets/js/nice-select2.js"></script>
+    <script src="assets/js/active.js"></script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+.single-testimonial-card { 
+    border: 1px solid rgba($color: #6D6D6D, $alpha: 0.16);
+    padding: 30px 25px;
+    border-radius: 8px;
+    margin-top: 30px !important;
+    transition: all .3s ease-in-out;
+
+    @media (max-width: 1220px) {
+        text-align: center;
+    }
+
+    @media (max-width: 991px) {
+        padding: 30px 20px;
+    }
+
+    &:hover {
+        border-color: $theme-color;
+    }
+
+	.client-img { 
+        width: 124px;
+        height: 124px;
+        border-radius: 50%;
+        float: left;
+        border-radius: 50%;
+        background-color: $theme-color;
+        position: relative;
+        margin-right: 35px;
+
+        @media (max-width: 991px) {
+            width: 100px;
+            height: 100px;
+            margin: 0px auto;
+            margin-right: 25px;
+        }
+
+        @media (max-width: 1200px) {
+            float: none;
+            margin: 0px auto;
+            margin-bottom: 25px;
+        }
+
+        &::before {
+            position: absolute;
+            height: 48px;
+            width: 48px;
+            border-radius: 50%;
+            text-align: center;
+            background: $theme-color;
+            transition: all .3s ease-in-out;
+            color: $heading-color;
+            content: "\f10d";
+            font-family: $fa;
+            font-size: 16px;
+            line-height: 48px;
+            right: -10px;
+            font-weight: 900;
+            bottom: 0;
+
+            @media (max-width: 991px) {
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+            }
+        }
+	}
+
+	.content { 
+        overflow: hidden;
+
+		.client-rating {
+            margin-bottom: 5px;
+
+            i {
+                color: #F9DE59;
+                transition: all .3s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    color: #F9DE59;
+                }
+            }
+		}
+
+		h4 { 
+            margin-bottom: 3px;
+            text-transform: capitalize;
+		}
+
+		span { 
+            text-transform: capitalize;
+		}
+	}
+}
+
+.testimonial-carousel-grid-active {
+    position: relative;
+
+    /* the slides */
+  .slick-slide {
+       margin: 0 15px;
+   }
+   /* the parent */
+   .slick-list {
+       margin: 0 -15px;
+   }
+
+   .circle-dots {
+    bottom: -70px;
+   }
+}
+
+.single-testimonial-box { 
+    background-color: #fff;
+    transition: all .3s ease-in-out;
+    padding: 0px 35px 60px;
+    margin-top: 80px;
+
+    @media (max-width: 767px) {
+        padding: 0px 30px 40px;
+    }
+
+    &:hover {
+        box-shadow: 0px 10px 35px 0px rgba(38, 42, 76, 0.1);
+    }
+
+    .client-img { 
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #f8f8f8;
+        box-shadow: 0px 10px 35px 0px rgba(38, 42, 76, 0.1);
+        margin: 0 auto;
+        display: inline-block;
+        margin-top: -50px;
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            position: absolute;
+            content: "\f10e";
+            left: 50%;
+            top: 0;
+            font-family: $fa;
+            color: $second-color;
+            font-size: 20px;
+            font-weight: 400;
+            transform: translateX(-50%);
+        }
+    }
+
+    .client-info { 
+        margin-top: 15px;
+
+        h4 { 
+            margin-bottom: 5px;
+            text-transform: capitalize;
+        }
+    }
+
+    .feedback {
+        position: relative;
+        margin-top: 20px;
+
+        p { 
+            margin: 20px 0px;
+        }
+
+        .star { 
+            color: $third-color;
+            line-height: 1;
+
+            span {
+                margin: 0 1px;
+            }
+        }
+    }
+}
+
+.testimonial-carousel-wrapper-active {
+    margin-top: -30px;
+
+    .single-testimonial-box {
+        padding: 0px 20px 30px;
+        background-color: #fff;
+    }
+
+    .slide-dots {
+        margin-bottom: -15px;
+    }
+
+}
+
+.testimnial-carousel-wrapper {
+    padding: 65px 0px 70px;
+
+    @media (max-width: 1199px) {
+        padding: 95px 0px 50px;
+    }
+
+    @media (max-width: 767px) {
+        padding: 80px 0px 60px;
+    }
+
+}
+
+.single-customer-review { 
+    background: #FFFFFF;
+    box-shadow: -8px 0px 1px rgba(37, 106, 215, 0.04), 8px 0px 24px rgba(37, 106, 215, 0.12);
+    border-radius: 8px;
+    padding: 30px 60px;
+    margin: 50px;
+
+    @media (max-width: 767px) {
+        margin: 20px 10px;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+	.rating { 
+        margin-bottom: 20px;
+
+        @media (max-width: 767px) {
+            margin-bottom: 10px;
+        }
+
+        i {
+            color: #F9DE59;
+        }
+	}
+
+	p { 
+        font-size: 18px;
+        font-family: 600;
+
+        @media (max-width: 767px) {
+            font-size: 16px;
+        }
+	}
+
+	.client-info-card { 
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        
+        @media (max-width: 767px) {
+            display: block;
+        }
+
+        .img-wrapper {
+            width: 100px;
+            height: 100px;
+            border: 6px solid $second-color;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width: 767px) {
+                width: 80px;
+                height: 80px;
+                line-height: 80px;
+                border: 4px solid $second-color;
+                margin: 0px auto;
+                margin-top: 10px;
+            }
+
+            .client-img { 
+                width: 80px;
+                height: 80px;
+                flex-wrap: wrap;
+                border-radius: 50%;
+                background-color: #f8f8f8;
+                border: 2px solid $theme-color;
+                position: relative;
+
+                @media (max-width: 767px) {
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px;
+                }
+            }
+        }
+
+		.client-details { 
+            margin-left: 20px;
+
+            @media (max-width: 767px) {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+
+			h4 { 
+                margin-bottom: 0px;
+
+
+                @media (max-width: 767px) {
+                    font-size: 18px;
+                }
+			}
+
+            span {
+                @media (max-width: 767px) {
+                    font-size: 14px;
+                }
+            }
+		}
+	}
+}

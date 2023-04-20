@@ -1,0 +1,55 @@
+.info-icon-item { 
+    margin-top: 20px;
+
+	img { 
+        margin-bottom: 20px;
+	}
+
+    h3 {
+        margin-bottom: 10px;
+    }
+}
+
+.why-choice-us {
+    background: $white;
+    z-index: 1;
+
+    &::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: "";
+        background: linear-gradient(94.08deg, $second-color 20.35%, $third-color 74.44%);
+        width: 100%;
+        height: 60%;
+        z-index: -1;
+        opacity: .7;
+    }
+
+    &::after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: "";
+        background: #fff;
+        width: 100%;
+        height: 40%;
+        z-index: -1;
+    }
+}
+
+.single-icon-box { 
+    background: #FFFFFF;
+    border: 1px solid rgba(95, 45, 238, 0.16);
+    border-radius: 8px;
+    padding: 30px;
+    padding-top: 35px;
+    margin-top: 30px;
+
+	.icon { 
+        margin-bottom: 25px;
+	}
+
+	.content { 
+	}
+}

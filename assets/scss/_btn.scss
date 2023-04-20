@@ -1,0 +1,161 @@
+/* ------------------------------------------------------------------
+   Template Default Button, Input Styles - Value Change with Your's Need
+ -------------------------------------------------------------------- */
+.btnd {
+    line-height: 1;
+    display: inline-block;
+    @include transition(.4s);
+    text-transform: capitalize;    
+    position: relative;
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.theme-btn {
+    @extend .btnd;    
+    padding: 18px 38px;
+    font-size: 16px;
+    font-weight: 600;
+    color: $heading-color;
+    background: $theme-color;
+    transition: all .4s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+
+    &.btn-radius {
+        border-radius: 30px;
+    }
+
+    @media (max-width: 580px) {
+        padding: 16px 35px;
+        font-size: 14px;
+    }
+
+    @media (max-width: 480px) {
+        padding: 15px 30px;
+    }
+
+    &.no-fil {
+        background-color: transparent;
+        border-color: rgba($color: #fff, $alpha: 0.2); 
+        margin-left: 15px;
+
+        @media (max-width: 500px) {
+            margin-left: 0;
+        }
+
+        &:hover {
+            background-color: $theme-color;
+            border: 1px solid $theme-color;
+        }
+    }
+
+    &.black {
+        background-color: $theme-color;
+        border-color: $theme-color;
+        box-shadow: inherit;
+
+        &:hover {
+            background-color: $second-color;           
+        }
+    }
+
+    &.minimal-btn {
+        color: #727475;
+        background: transparent;
+    }
+
+    &:hover {
+        background: linear-gradient(93.01deg, #5F2DEE 7.72%, #256AD7 88.32%);
+        color: $white;
+    }
+
+}
+
+.cat-btn {
+    font-size: 16px;
+    line-height: 1;
+    padding: 20px 30px;
+    font-weight: 700;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba($color: #fff, $alpha: .20);
+    transition: all .3s ease-in-out;
+    background: transparent;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 30px;
+
+    i {
+        margin-right: 10px;
+    }
+
+    &.color {
+        background-color: #00baa3;
+        border-color: #00baa3;
+        color: #fff;
+    }
+
+    &:hover {
+        background-color: #00baa3;
+        border-color: #00baa3;
+        border-style: solid;
+        border-width: 1px;
+    }
+}
+
+.circle-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+
+    li {
+        display: inline-block;
+        margin: 0 6px;
+        text-align: center;
+
+        button {
+            position: relative;
+            text-indent: -9999px;
+            border-radius: 30px;
+            width: 12px;
+            height: 12px;
+            background: linear-gradient(180deg, #256AD7 0%, #5F2DEE 100%);
+            transition: all .3s ease-in-out;
+            opacity: .2;
+
+            &:hover {
+                background: linear-gradient(180deg, #256AD7 0%, #5F2DEE 100%);
+                opacity: 1;
+            }
+
+            &::before {
+                position: absolute;
+                height: 22px;
+                width: 22px;
+                border-radius: 50%;
+                border: 2px solid $second-color;
+                content: "";
+                left: -50%;
+                top: -50%;
+                z-index: -1;
+                transform: translate(1px, 1px);
+                opacity: 0;
+                visibility: hidden;
+                transition: all .3s ease-in-out;
+            }
+        }
+
+        &.slick-active {
+            button {
+                background: linear-gradient(180deg, #256AD7 0%, #5F2DEE 100%);
+                opacity: 1;
+
+                &::before {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}

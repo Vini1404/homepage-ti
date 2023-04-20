@@ -1,0 +1,165 @@
+.section-padding {
+    padding: 120px 0px;
+
+    @media (max-width: 1191px) {
+        padding: 100px 0px;
+    }
+
+    @media (max-width: 767px) {
+        padding: 80px 0px;
+    }
+}
+
+.section-title { 
+    margin-bottom: 30px;
+    margin-top: -6px;
+
+    @media (max-width: 767px) {
+        margin-bottom: 20px;
+    }
+
+    &.text-white {
+        > span {
+
+            &::before {
+                color: $white !important;
+            }
+        }
+    }
+
+	> span { 
+        position: relative;
+        text-transform: capitalize;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1;
+        background: #5F2DEE; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #5F2DEE, #256AD7); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #5F2DEE, #256AD7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        padding-left: 22px;
+
+        &::before {
+            position: absolute;
+            left: 0;
+            bottom: 3px;
+            content: "//";
+            background: #5F2DEE; /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #5F2DEE, #256AD7); /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #5F2DEE, #256AD7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-size: 18px;
+        }
+	}
+
+	h2 { 
+        font-size: 48px;
+        text-transform: capitalize;
+
+        @media (max-width: 1199px) {
+            font-size: 42px;
+        }
+
+        @media (max-width: 991px) {
+            font-size: 40px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 32px;
+        }
+
+        @media (max-width: 585px) {
+            font-size: 28px;
+        }
+
+        span {
+            color: $second-color;
+        }
+	}
+
+    h6 {
+        color: $third-color;
+        position: relative;
+        display: inline-block;
+        padding: 0px 20px;
+        line-height: 1;
+        text-transform: capitalize;
+        margin-bottom: 12px;
+        font-weight: 500;
+
+        &::before, &::after {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: linear-gradient(180deg, $second-color 0%, $third-color 100%);
+            content: "";
+            left: 0;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &::after {
+            right: 0;
+            left: auto;
+        }
+    }
+
+}
+
+.section-bg {
+    background-color: $section-bg;
+}
+
+.bg-gradient {
+    background: linear-gradient(115.02deg, #5F2DEE 51.01%, #256AD7 102.64%) !important;
+    overflow: hidden;
+    z-index: 2;
+
+    h1, h2, h3, h4, h5, h6, span {
+        color: $white;
+    }
+
+    span {
+        &::before {
+            color: $white;
+        }
+    }
+}
+
+.left-bg-overlay {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        width: 35%;
+        left: 0;
+        top: 0;
+        content: "";
+        background: $theme-color;
+        height: 100%;
+        z-index: -1;
+
+        @media (max-width: 1199px) {
+            display: none;
+        }
+    }
+}
+
+.shape-top {
+    position: absolute;
+    top: -50px;
+    left: 80px;
+    z-index: -1;
+}
+
+.shape-bottom {
+    position: absolute;
+    bottom: -10px;
+    left: -5px;
+    z-index: -1;
+}

@@ -1,0 +1,236 @@
+footer {
+    background: $heading-color;
+
+    ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+
+        li {
+            list-style: none;
+        }
+    }
+
+    .footer-widgets-wrapper {
+        padding: 80px 0px 120px;
+        padding-top: 265px;
+
+        @media (max-width: 991px) {
+            padding: 160px 0px 100px;
+        }
+
+        @media (max-width: 767px) {
+            padding: 140px 0px 80px;
+        }
+    }
+
+    .single-footer-wid {
+        margin-top: 40px;
+
+        .wid-title {
+            margin-bottom: 25px;
+
+            @media (min-width: 767px) {
+                margin-top: 20px;
+            }
+
+            h3 {
+                color: $white;
+            }
+        }
+
+        ul {
+
+            li {
+                
+                a {
+                    margin-top: 8px;
+                    color: $textcolor;
+                    display: block;
+                    text-transform: capitalize;
+                    font-size: 16px;
+
+                    &:hover {
+                        color: $theme-color !important;
+                    }
+                }
+            }
+        }
+    }
+
+    &.footer-2 {
+        background-color: $second-color;
+
+        &.bg-overlay {
+            &::before {
+                opacity: .9;
+            }
+        }
+
+        .footer-bottom {
+            background: transparent;
+
+            .bottom-content-wrapper { 
+                background: $second-color;
+            }
+        }
+    }
+
+    .footer-bottom {
+        background-color: $theme-color;
+
+        @media (max-width: 767px) {
+            text-align: center;
+        }
+
+        .bottom-content-wrapper {
+            padding: 30px 0;
+
+            @media (max-width: 767px) {
+                padding: 20px;
+            }
+    
+            p, b, strong {
+                color: $heading-color;
+                text-transform: capitalize;
+            }
+    
+            ul {
+                li {
+                    display: inline-block;
+
+                    &:first-of-type {
+                        a {
+                            margin-left: 0;
+                        }
+                    }
+    
+                    a {
+                        display: inline-block;
+                        margin-left: 15px;
+                        color: $heading-color;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+
+        .social-links {
+            a {
+                display: inline-block;
+                margin-right: 15px;
+                color: $heading-color;
+
+                &:hover {
+                    color: $second-color;
+                }
+
+                &:last-of-type {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+}
+
+.get-in-touch { 
+
+	.single-contact-info {
+        margin-top: 5px;
+
+		.icon { 
+            float: left;
+            overflow: hidden;
+            margin-right: 15px;
+            color: $theme-color;
+            padding-left: 2px;
+
+            &.id2 {
+                color: $theme-color;
+            }
+
+            &.id3 {
+                color: $theme-color;
+            }
+		}
+
+		.contact-info { 
+            overflow: hidden;
+            color: $white;
+		}
+	}
+}
+
+.about-quantech { 
+    margin-top: 40px;
+
+	a { 
+        display: block;
+	}
+
+	p {
+        margin-top: 20px;
+	}
+
+}
+
+.footer-social-icon { 
+    margin-top: 25px;
+
+    a { 
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 42px;
+        text-align: center;
+        background-color: $second-color;
+        color: $white;
+        font-size: 16px;
+        margin-right: 5px;
+    }
+}
+
+.newsletter_widget {
+    .newsletter_box {
+        position: relative;
+        margin-top: 30px;
+
+        input {
+            border: 0px;
+            border-radius: 0;
+            width: 100%;
+            position: relative;
+            background-color: $theme-color;
+            height: 64px;
+            padding-left: 25px;
+            padding-right: 15px;
+            line-height: 64px;
+            color: $heading-color;
+            
+            &::placeholder {
+                color: $heading-color;
+            }
+        }
+
+        button {
+            height: 100%;
+            color: $theme-color;
+            display: inline-block;
+            font-size: 18px;
+            line-height: 1;
+            transition: all .3s ease-in-out;
+            background: $second-color;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 70px;
+
+            &:hover {
+                background-color: $third-color;
+                color: #fff;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,110 @@
+
+.single-pricing-plan { 
+    background-color: $theme-color;
+    position: relative;
+    padding: 60px;
+    margin-top: 30px;
+    border-radius: 4px;
+
+    @media (max-width: 1199px) {
+        padding: 40px 30px;
+    }
+
+
+	.plan-title { 
+
+		h2 { 
+            text-transform: capitalize;
+            margin-top: -5px;
+
+            @media (max-width: 767px) {
+                font-size: 24px;
+            }
+		}
+	}
+
+	.plan-value { 
+        font-size: 16px;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+
+		span { 
+            display: block;
+            font-size: 80px;
+            font-family: $heading-font;
+            color: $third-color;
+            line-height: 1;
+            font-weight: 400;
+            letter-spacing: -3px;
+            margin-bottom: 10px;
+
+            @media (max-width: 767px) {
+                font-size: 60px;
+            }
+		}
+	}
+
+	.plan-buy-btn { 
+        position: relative;
+        z-index: 1;
+        padding-top: 15px;
+        font-size: 16px;
+
+        &::before {
+            position: absolute;
+            left: -15%;
+            top: 0;
+            background-color: #fff;
+            width: 130%;
+            height: 70%;
+            z-index: -1;
+            content: "";
+
+            @media (max-width: 767px) {
+                left: -7%;
+                width: 114%;
+            }
+        }
+
+		.theme-btn { 
+            margin-top: 10px;
+            background: $second-color;
+            color: #fff; 
+
+            &:hover {
+                background: $third-color;
+                color: #fff;
+            }
+
+            i {
+                margin-left: 8px;
+            }
+		}
+	}
+
+	.plan-service-list { 
+        margin-top: 40px;
+        display: block;
+
+		li { 
+            margin-top: 12px;
+            position: relative;
+            color: $heading-color;
+
+            &.no, &.not {
+                &::before { 
+                    content: "\f00d";
+                }
+            }
+
+            &::before {
+                position: absolute;
+                right: 0;
+                top: 0;
+                font-family: $fa;
+                content: "\f00c";
+                opacity: .5;
+            }
+		}
+	}
+}
