@@ -1,4 +1,4 @@
-# HomePage - Projeto de Página Inicial de TI
+# Projeto de Página Inicial de TI
 Este é um projeto de Página Inicial para uma empresa de TI, que utiliza as tecnologias HTML, CSS e SCSS, JavaScript e PHP.
 
 ## Tecnologias Utilizadas
