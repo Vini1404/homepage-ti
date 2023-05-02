@@ -25,3 +25,5 @@ Se você quiser contribuir com o projeto, fique à vontade para criar um fork do
 
 ## Licença
 Este projeto é licenciado sob a licença MIT - consulte o arquivo LICENSE.md para obter mais detalhes.
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/Vini1404/homepage-ti/blob/main/LICENSE.md)
